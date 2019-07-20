@@ -1,0 +1,19 @@
+h1, h2, h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  color: #d64546;
+}
+
+.blog-post {
+    margin-bottom: 4rem;
+}
+
+a {
+  color: #0041a9;
+}
+
+main {
+  margin-top: 2rem;
+}
