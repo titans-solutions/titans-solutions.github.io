@@ -21,3 +21,31 @@ main {
 .apo {
   color: #d64546;
 }
+
+.bg-darkest, a.bg-darkest:focus, a.bg-darkest:hover, button.bg-darkest:focus, button.bg-darkest:hover {
+    background-color: #000!important;
+}
+
+/**/
+.site-footer .nav-link {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    color: #888;
+    text-transform: uppercase;
+    border-right: 1px solid #495057;
+}
+.site-footer .copy {
+    border-top: 1px solid #212529;
+    text-align: center;
+    color: #888;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 90%;
+}
+.site-footer .nav-item:last-child .nav-link {
+    border-right: 0;
+}
