@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{%- include head.html -%}
+
+<body>
+
+{%- include header.html -%}
+
+{% assign id = page.path | split:"/" | last | split:"." | first %}
+<main id="{{ id }}" class="page-content" aria-label="Content">
+    <div class="wrapper">
+        {{ content }}
+    </div>
+</main>
+
+{%- include footer.html -%}
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="/js/main.js"></script>
+</body>
+
+</html>

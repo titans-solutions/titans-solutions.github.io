@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+
+<h1 class="d-none" class="logo">Titans<b>'</b> Solutions</h1>
+
+{% assign sections = site.sections | sort: 'order' %}
+{% for section in sections %}
+{% assign id = section.path | split:"/" | last | split:"." | first %}
+<section id="{{id}}">
+    <div class="container">
+        <header class="section-header">
+            <h2>{{ section.title }}</h2>
+            <p>{{ section.summary }}</p>
+            {{ section }}
+        </header>
+    </div>
+</section>
+{% endfor %}
+
+{{ content }}

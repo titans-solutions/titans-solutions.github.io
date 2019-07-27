@@ -1,0 +1,39 @@
+---
+title: Team
+order: 30
+summary: >-
+  Однажды думал - думал и придумал я куплет<br>
+  О том, что, не смотря на окружающую тьму,<br>
+  Стремимся тем не менее мы вырваться на свет,<br>
+  И даже зрим его, и даже движемся к нему!<br>
+---
+
+
+<div class="row">
+  {%- for man in site.team -%}
+  <div class="col-lg-4 col-md-6 fadeInUp">
+    <div class="member">
+      <img src="{{ man.img }}" class="img-fluid" alt="">
+      <div class="member-info">
+        <div class="member-info-content">
+          <h4>{{ man.name }}</h4>
+          {%- if man.position -%}
+          <span>{{ man.position }}</span>
+          {%- endif -%}
+          <div class="social">
+            {%- if man.twitter -%}
+            <a href=""><i class="fa fa-twitter"></i></a>
+            {%- endif -%}
+            {%- if man.facebook -%}
+            <a href=""><i class="fa fa-facebook"></i></a>
+            {%- endif -%}
+            {%- if man.linkedin -%}
+            <a href=""><i class="fa fa-linkedin"></i></a>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {%- endfor -%}
+</div>
